@@ -1,0 +1,114 @@
+.slider {
+    position: relative;
+}
+
+.skills__slider {
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider__content {
+    padding: 15px;
+    background-color: rgba(79, 70, 70, 0.092);
+    border-radius: 20px;
+}
+
+.slider__list {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 18%;
+}
+
+.slider__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider__item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.skills__name {
+    margin-top: 10px;
+    font-size: var(--text-size);
+}
+    background-image: url('../img/skills/javascript.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.slider {
+    position: relative;
+}
+
+.next__button, .prev__button {
+    position: absolute;
+    width: 10%;
+    height: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(219, 18, 18, 0.319);
+    top: calc(50% - 25px);
+}
+
+.next_btn, .prev_btn {
+    width: 20px;
+    height: 20px;
+    fill: rgb(255, 255, 255);
+}
+
+.next__button {
+    right: 15px;
+}
+
+.prev__button {
+    left: 15px;
+}
+
+.next, .prev {
+    transition: all .7s ease;
+    cursor: pointer;
+}
+.next:hover {
+    transform: scale(1.2);
+    background-color: rgba(219, 18, 18, 0.236);
+}
+
+.prev:hover {
+    transform: scale(1.2);
+    background-color: rgba(219, 18, 18, 0.236);
+}
+
+.skills:hover .section-title::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .skills__slider {
+        max-width: 100%;
+    } 
+
+    .slider__item {
+        flex: 1 0 17%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .skills__slider {
+        max-width: 100%;
+    } 
+
+    .slider__item {
+        flex: 1 0 25%;
+    }
+}

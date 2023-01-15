@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800;900&family=Inter:wght@300;400;500;600&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <title>CV</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__body">
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#person" class="nav__link">
+                                About me
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                Education
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                Experience
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link">
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#social" class="nav__link">
+                                Social
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#hobbies" class="nav__link">
+                                Hobbies
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="person" id="person">
+            <div class="container">
+                <div class="person_bg">
+                    <div class="person__body">
+                        <div class="person__avatar avatar">
+                            <img src="./img/avatar.jpg" alt="person-avatar" class="person__image">
+                            <div class="avatar__border"></div>
+                        </div>
+                        <div class="person__description">
+                            <h1 class="person__name">Evgeniy Chernyavskiy</h1>
+                            <p>Beginner web-developer, highly motivated and experienced in:
+                                Adaptive (and "responsive") development of pages according to the layout. 
+                                Developing Client - Server applications with 3rd party API's integration. 
+                                Creating SPA projects from scratch.
+                                I also have knowledge with React, among with Back-end stack - NodeJS, SQL, and REST API. I am continuously improving my knowledge of trending libraries and technologies to implement them in current and future projects.
+                            </p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience" id="experience">
+            <div class="experience__body container">
+                <div class="experience__education" id="education">
+                    <h2 class="section-title education__title">
+                        Education
+                    </h2>
+                    <p class="education__text">
+                        Belarusian National Technical university (2011 - 2016).
+                        Faculty of Information Technologies and Robotics.
+                        Аutomation engineer
+                    </p>
+                </div>
+                <div class="experience__work">
+                    <h2 class="section-title experience__title">
+                        Experience
+                    </h2>
+                    <ul class="work__list work">
+                        <li class="work__item">
+                            2016-2022  "Metro Minsk", engineer-electrician. 
+                        </li>
+                        <li class="work__item">
+                            2021 - studying at the RSSchool on the JavaScript/Front-end course.
+                        </li>
+                        <li class="work__item">
+                            2022 - studying at the RSSchool on the ReactJS course.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="skills__body container">
+                <h2 class="section-title skills__title">Skills</h2>
+                <div class="skills__slider slider">
+                    <div class="slider__content">
+                        <ul class="slider__list skills__list">
+                            <li class="slider__item">
+                                <img src="./img/skills/HTML.png" alt="" class="slider__image">
+                                <p class="skills__name">HTML5</p>
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/skills/css3.png" alt="" class="slider__image">
+                                <p class="skills__name">CSS3</p>
+                            </li>
+                            <li class="slider__item js">
+                                <img src="./img/skills/javascript.png" alt="" class="slider__image">
+                                <p class="skills__name">JavaScript</p>
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/skills/react.png" alt="" class="slider__image">
+                                <p class="skills__name">ReactJS</p>
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/skills/github.png" alt="" class="slider__image">
+                                <p class="skills__name">GitHub</p>
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/skills/nodejs.png" alt="" class="slider__image">
+                                <p class="skills__name">NodeJS</p>
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/skills/sass.png" alt="" class="slider__image">
+                                <p class="skills__name">SCSS</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next__button next next__skill">
+                        <svg class="icon next_btn" xmlns="http://www.w3.org/2000/svg"><path d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z"/><path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z"/></svg>
+                    </div>
+                    <div class="prev__button prev prev__skill">
+                        <svg class="icon prev_btn" xmlns="http://www.w3.org/2000/svg"><path d="m13.707 4.707-1.414-1.414L3.586 12l8.707 8.707 1.414-1.414L6.414 12l7.293-7.293z"/><path d="m19.707 4.707-1.414-1.414L9.586 12l8.707 8.707 1.414-1.414L12.414 12l7.293-7.293z"/></svg>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="other">
+            <div class="other__body container">
+                <div class="other__contacts contacts" id="contacts">
+                    <div class="contacts__body">
+                        <h2 class="section-title contacts__title">
+                            Contacts
+                        </h2>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <svg class="phone" width="19" height="18" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.7334 0H2.7334C1.6334 0 0.743398 0.9 0.743398 2L0.733398 14C0.733398 15.1 1.6334 16 2.7334 16H18.7334C19.8334 16 20.7334 15.1 20.7334 14V2C20.7334 0.9 19.8334 0 18.7334 0ZM18.7334 4L10.7334 9L2.7334 4V2L10.7334 7L18.7334 2V4Z"/>
+                                    </svg>
+                                <p class="contacts__phone">
+                                    +375292547610
+                                </p>
+                            </li>
+                            <li class="contacts__item">
+                                <svg class="mail" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.7434 12.38C16.5134 12.38 15.3234 12.18 14.2134 11.82C13.8634 11.7 13.4734 11.79 13.2034 12.06L11.6334 14.03C8.8034 12.68 6.1534 10.13 4.7434 7.2L6.6934 5.54C6.9634 5.26 7.0434 4.87 6.9334 4.52C6.5634 3.41 6.3734 2.22 6.3734 0.99C6.3734 0.45 5.9234 0 5.3834 0H1.9234C1.3834 0 0.733398 0.24 0.733398 0.99C0.733398 10.28 8.4634 18 17.7434 18C18.4534 18 18.7334 17.37 18.7334 16.82V13.37C18.7334 12.83 18.2834 12.38 17.7434 12.38Z"/>
+                                </svg>  
+                                <p class="contacts__mail">
+                                    lognard1994@gmail.com
+                                </p>
+                            </li>
+                            <li class="contacts__item">
+                                <svg class="telegram"  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9932 1.58221C15.0223 1.40736 14.9567 1.23016 14.8208 1.11645C14.6848 1.00274 14.4988 0.969519 14.3318 1.02914L0.331836 6.02914C0.143209 6.0965 0.0129867 6.26994 0.000913704 6.46987C-0.0111592 6.6698 0.0972469 6.85765 0.276398 6.94722L4.2764 8.94722C4.43688 9.02746 4.62806 9.01556 4.77735 8.91603L8.09775 6.70244L6.10957 9.18766C6.02203 9.29709 5.98442 9.43824 6.00592 9.57672C6.02742 9.7152 6.10605 9.8383 6.22265 9.91603L12.2227 13.916C12.3638 14.0101 12.5431 14.0262 12.6988 13.9588C12.8545 13.8914 12.9653 13.7496 12.9932 13.5822L14.9932 1.58221Z"/>
+                                    </svg>
+                                <p class="contacts__mail">
+                                    @evgenbit
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social__body" id="social">
+                        <h2 class="section-title social__title">
+                            Social
+                        </h2>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://vk.com/id256079828" class="social__link" target="_blank">
+                                    <svg class="vk" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"/></svg>                            
+                                    vk.com
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.linkedin.com/in/evgeniy-chernyavskiy-b3828b213/" class="social__link" target="_blank">
+                                    <svg class="linkedin" width="19" height="18" viewBox="0 0 485 485" width="485pt" xmlns="http://www.w3.org/2000/svg"><path d="m89.015625 189.90625h67.507813v203.097656h-67.507813zm0 0"/><path d="m122.324219 162.1875h.445312c23.550781 0 38.195313-15.601562 38.195313-35.101562-.445313-19.929688-14.644532-35.089844-37.753906-35.089844-23.105469 0-38.210938 15.160156-38.210938 35.089844 0 19.5 14.679688 35.101562 37.324219 35.101562zm0 0"/><path d="m261.398438 393.003906v-113.429687c0-6.085938.464843-12.117188 2.242187-16.457031 4.886719-12.148438 15.976563-24.691407 34.640625-24.691407 24.4375 0 34.195312 18.628907 34.195312 45.917969v108.65625h67.523438v-116.464844c0-62.378906-33.308594-91.398437-77.742188-91.398437-35.871093 0-51.886718 19.742187-60.859374 33.546875v.664062h-.441407c.117188-.21875.308594-.441406.441407-.664062v-28.777344h-67.535157c.90625 19.050781 0 203.09375 0 203.09375h67.535157zm0 0"/><path d="m0 0v485h485v-485zm455 455h-425v-425h425zm0 0"/></svg>                                
+                                    linkedin
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/evgenbit/" class="social__link" target="_blank">
+                                    <svg class="instagram" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0" fill="none" width="20" height="20"/>
+                                        <g>
+                                        <path d="M12.7 10c0-1.5-1.2-2.7-2.7-2.7S7.3 8.5 7.3 10s1.2 2.7 2.7 2.7c1.5 0 2.7-1.2 2.7-2.7zm1.4 0c0 2.3-1.8 4.1-4.1 4.1S5.9 12.3 5.9 10 7.7 5.9 10 5.9s4.1 1.8 4.1 4.1zm1.1-4.3c0 .6-.4 1-1 1s-1-.4-1-1 .4-1 1-1 1 .5 1 1zM10 3.4c-1.2 0-3.7-.1-4.7.3-.7.3-1.3.9-1.5 1.6-.4 1-.3 3.5-.3 4.7s-.1 3.7.3 4.7c.2.7.8 1.3 1.5 1.5 1 .4 3.6.3 4.7.3s3.7.1 4.7-.3c.7-.3 1.2-.8 1.5-1.5.4-1.1.3-3.6.3-4.7s.1-3.7-.3-4.7c-.2-.7-.8-1.3-1.5-1.5-1-.5-3.5-.4-4.7-.4zm8 6.6v3.3c0 1.2-.4 2.4-1.3 3.4-.9.9-2.1 1.3-3.4 1.3H6.7c-1.2 0-2.4-.4-3.4-1.3-.8-.9-1.3-2.1-1.3-3.4V10 6.7c0-1.3.5-2.5 1.3-3.4C4.3 2.5 5.5 2 6.7 2h6.6c1.2 0 2.4.4 3.4 1.3.8.9 1.3 2.1 1.3 3.4V10z"/>
+                                        </g>
+                                    </svg>                
+                                    instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                
+                </div>
+                <div class="other__languages">
+                    <h2 class="section-title languages__title">
+                        Languages
+                    </h2>
+                    <p>English: A2 - B1</p>
+                </div>
+                <div class="other__courses courses">
+                    <h2 class="section-title contacts__title">
+                        Courses
+                    </h2>
+                    <a href="https://app.rs.school/certificate/4vk5x9b6" class="courses__link" target="_blank">
+                        THE ROLLING SCOPES SCHOOL REACT 2022 Q1 (JAVASCRIPT)
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="hobbies" id="hobbies">
+            <div class="hobbies__body container">
+                <h2 class="section-title hobbies__title">Hobbies</h2>
+                <div class="skills__slider slider">
+                    <div class="slider__content">
+                        <ul class="slider__list hobbies__list">
+                            <li class="slider__item">
+                                <img src="./img/hobbies/reading.jpg" alt="" class="slider__image">
+                                <p class="skills__name">Reading</p>
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/hobbies/computer.jpg" alt="" class="slider__image">
+                                <p class="skills__name">Computer games</p>
+                            </li>
+                            <li class="slider__item js">
+                                <img src="./img/hobbies/sport.jpg" alt="" class="slider__image">
+                                <p class="skills__name">Sport</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next__button next next__hobbie">
+                        <svg class="icon next_btn" xmlns="http://www.w3.org/2000/svg"><path d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z"/><path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z"/></svg>
+                    </div>
+                    <div class="prev__button prev prev__hobbie">
+                        <svg class="icon prev_btn" xmlns="http://www.w3.org/2000/svg"><path d="m13.707 4.707-1.414-1.414L3.586 12l8.707 8.707 1.414-1.414L6.414 12l7.293-7.293z"/><path d="m19.707 4.707-1.414-1.414L9.586 12l8.707 8.707 1.414-1.414L12.414 12l7.293-7.293z"/></svg>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__git git">
+                <a href="https://github.com/Evgeniy37529" class="git__link" target="_blank">
+                    <svg class="icon__git" width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="20" fill="#181717"/>
+                        <path d="M6.81348 34.235C9.24811 38.3138 13.0939 41.4526 17.6772 42.9784C18.6779 43.1614 19.0425 42.5438 19.0425 42.0134C19.0425 41.7938 19.0388 41.4058 19.0339 40.8866C19.0282 40.2852 19.0208 39.5079 19.0155 38.6124C13.4524 39.8206 12.2787 35.931 12.2787 35.931C11.3689 33.6215 10.0576 33.0064 10.0576 33.0064C8.2417 31.7651 10.1951 31.7896 10.1951 31.7896C12.2025 31.9321 13.2584 33.8511 13.2584 33.8511C15.0424 36.9071 17.94 36.0243 19.0794 35.5135C19.2611 34.2207 19.7767 33.3391 20.3489 32.8394C15.908 32.3348 11.2387 30.6183 11.2387 22.9545C11.2387 20.7715 12.0184 18.9863 13.2977 17.5879C13.0914 17.082 12.4051 15.0488 13.4929 12.2949C13.4929 12.2949 15.1725 11.7571 18.9934 14.3453C20.5883 13.9021 22.2998 13.6798 24.0003 13.6725C25.6983 13.6798 27.4099 13.9021 29.0072 14.3453C32.8256 11.7571 34.5016 12.2949 34.5016 12.2949C35.5931 15.0488 34.9067 17.082 34.7005 17.5879C35.9823 18.9863 36.757 20.7715 36.757 22.9545C36.757 30.638 32.0804 32.3286 27.6247 32.8234C28.343 33.441 28.9827 34.6614 28.9827 36.5277C28.9827 38.3152 28.9717 39.8722 28.9644 40.9035C28.9608 41.4143 28.9581 41.7962 28.9581 42.0134C28.9581 42.5487 29.3178 43.1712 30.3332 42.976C33.9844 41.7572 37.1671 39.5154 39.5403 36.5903C35.8734 41.1108 30.274 44 23.9997 44C16.6943 44 10.3038 40.0832 6.81348 34.235Z" fill="white"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+            <div class="foooter__intership">
+                JS From Zero To Hero 2023
+            </div>
+            <div class="footer__year">
+                <p>2023</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

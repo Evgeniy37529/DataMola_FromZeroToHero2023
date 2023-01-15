@@ -1,0 +1,97 @@
+
+.other__body {
+    display: flex; 
+}
+
+.other__contacts {
+    flex: 1 0 53%;
+    padding-right: 15px;
+    border-right: 2.5px solid var(--bg-color);
+}
+
+.other__languages {
+    padding: 0 15px;
+    border-left: 2.5px solid var(--bg-color);
+    border-right: 2.5px solid var(--bg-color);
+}
+
+.other__courses {
+    padding-left: 15px;
+    border-left: 2.5px solid var(--bg-color);
+}
+
+.contacts__list, .social__list {
+    position: relative;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    border-bottom: 5px solid var(--bg-section);
+}
+
+.contacts__list::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--bg-color);
+    bottom: -25px;
+    left: 0px;
+}
+
+.contacts__item, .social__item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: blue;
+    font-size: var(--text-size);
+    transition: all .4s ease-in;
+}
+
+.social__item:hover {
+    background-color: rgba(42, 38, 46, 0.214);
+}
+
+.social__link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: blue;
+}
+
+.mail, .phone, .telegram, .vk, .linkedin, .instagram {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 7px;
+    fill: blue;
+}
+
+.social__title {
+    margin-top: 50px;
+}
+
+.courses__link {
+    font-size: var(--text-size);
+    color: blue;
+}
+
+.contacts__body:hover .section-title::after, 
+.social__body:hover .section-title::after,
+.other__languages:hover .section-title::after,
+.other__courses:hover .section-title::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .other__body {
+        flex-direction: column;
+    }
+
+    .other__languages, .other__courses {
+        margin-top: 30px;
+    }
+}

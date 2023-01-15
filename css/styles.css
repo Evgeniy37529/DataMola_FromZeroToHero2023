@@ -1,0 +1,73 @@
+@import url('./vars.css');
+@import url('./header.css');
+@import url('./person.css');
+@import url('./education.css');
+@import url('./skills.css');
+@import url('./others.css');
+@import url('./hobbies.css');
+@import url('./footer.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Epilogue';
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    background-color: var(--bg-section);
+    padding: var(--padding-section-body);
+    border-bottom: var(--border-section);
+}
+
+
+.section-title {
+    position: relative;
+    margin-bottom: 40px;
+    color: rgb(17, 8, 135);
+    font-size: var(--section-title-size);
+    font-weight: normal;
+}
+
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: rgb(132, 13, 13);
+    width: 100px;
+    bottom: -7px;
+    left: 2px;
+    transition: all .3s ease;
+    
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 7px;
+    background-color: rgb(132, 13, 13);
+    width: 40px;
+    bottom: -9px;
+    left: 2px;
+}

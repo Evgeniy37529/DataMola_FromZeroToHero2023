@@ -1,0 +1,3 @@
+.hobbies:hover .section-title::after {
+    width: 100%;
+}

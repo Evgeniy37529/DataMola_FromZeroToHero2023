@@ -1,0 +1,38 @@
+.footer__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--bg-section);
+}
+
+.git__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    transition: all 0.3s ease;
+    
+}
+
+.git__link:hover {
+    scale: 1.2;
+}
+
+.icon__git {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .footer__body {
+        flex-direction: column;
+    }
+
+    .footer__git, .foooter__intership {
+        margin-bottom: 10px;
+    }
+
+}

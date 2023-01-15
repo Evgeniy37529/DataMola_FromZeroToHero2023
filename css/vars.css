@@ -1,0 +1,10 @@
+:root {
+    --bg-color: #f4f4f4;
+    --container: 1200px;
+    --header-font: 1.5rem;
+    --padding-section-body: 3vw;
+    --bg-section: #fff;
+    --section-title-size: calc(30px + 15 * (100vw - 720px) / 880);
+    --border-section: 5px solid #f4f4f4;
+    --text-size: calc(16px + 4 * (100vw - 720px) / 880);;
+}

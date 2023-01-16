@@ -47,8 +47,8 @@
 
 .next__button, .prev__button {
     position: absolute;
-    width: 10%;
-    height: 22%;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;

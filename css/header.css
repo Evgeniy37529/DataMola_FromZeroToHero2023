@@ -97,6 +97,15 @@
     position: relative;
 }
 
+.nav__link {
+    color: blue;
+    transition: all .3s ease;
+}
+
+.nav__link:hover {
+    color: rgb(132, 13, 13);
+}
+
 .nav__item::after {
     content: '';
     position: absolute;

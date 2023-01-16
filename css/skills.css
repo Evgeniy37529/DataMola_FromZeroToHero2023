@@ -40,10 +40,6 @@
     margin-top: 10px;
     font-size: var(--text-size);
 }
-    background-image: url('../img/skills/javascript.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 .slider {
     position: relative;

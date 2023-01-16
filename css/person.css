@@ -9,12 +9,26 @@
     border-radius: 20px;
     padding: 25px;
 }
+.person__list {
+    display: flex;
+    padding: 10px 0;
+    padding-left: 9%;
+    flex-direction: column;
+    align-self: center;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.person__item {
+    text-align: left;
+}
 
 .person__avatar {
     position: relative;
     flex-shrink: 0;
     width: 300px;
     height: 300px;
+    margin: 10px;
     border-radius: 50%;
     animation: border-avatar 3s ease-in infinite;
 }
@@ -48,6 +62,12 @@
     font-weight: 500;
 }
 
+.person__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+}
+
 .person__description p {
     font-size: var(--text-size);
     line-height: 150%;
@@ -66,6 +86,10 @@
     .person__avatar {
         width: 200px;
         height: 200px;
+    }
+
+    .person__list {
+        padding-left: 0%;
     }
 }
 

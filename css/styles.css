@@ -18,8 +18,12 @@ html {
 }
 
 body {
+    position: relative;
     background-color: var(--bg-color);
     font-family: 'Epilogue';
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 ul {

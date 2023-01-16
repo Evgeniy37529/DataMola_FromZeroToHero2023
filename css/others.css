@@ -1,22 +1,34 @@
-
-.other__body {
-    display: flex; 
-}
-
-.other__contacts {
-    flex: 1 0 53%;
-    padding-right: 15px;
+.contacts__body {
+    flex: 1 0 70%;
+    padding-right: 20px;
     border-right: 2.5px solid var(--bg-color);
 }
 
-.other__languages {
-    padding: 0 15px;
+.social__body {
+    flex: 1 0 30%;
+    padding-left: 20px;
     border-left: 2.5px solid var(--bg-color);
+}
+
+.languages {
+    margin-top: 40px;
+    display: flex;
+}
+
+.other__contacts {
+    display: flex;
+    padding-right: 15px;
+}
+
+.other__languages {
+    padding-right: 20px;
+    flex: 1 0 68%;
     border-right: 2.5px solid var(--bg-color);
 }
 
 .other__courses {
-    padding-left: 15px;
+    flex: 1 0 30%;
+    padding-left: 20px;
     border-left: 2.5px solid var(--bg-color);
 }
 
@@ -25,18 +37,6 @@
     padding: 15px;
     background-color: var(--bg-color);
     border-radius: 10px;
-    border-bottom: 5px solid var(--bg-section);
-}
-
-.contacts__list::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: var(--bg-color);
-    bottom: -25px;
-    left: 0px;
 }
 
 .contacts__item, .social__item {
@@ -49,6 +49,10 @@
     color: blue;
     font-size: var(--text-size);
     transition: all .4s ease-in;
+}
+
+.contacts__item {
+    color: black;
 }
 
 .social__item:hover {
@@ -70,8 +74,8 @@
     fill: blue;
 }
 
-.social__title {
-    margin-top: 50px;
+.mail, .phone, .telegram {
+    fill: black;
 }
 
 .courses__link {
@@ -93,5 +97,49 @@
 
     .other__languages, .other__courses {
         margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .other__contacts {
+        flex-direction: column;
+    }
+
+    .social {
+        flex-direction: column; 
+    }
+
+    .contacts__body {
+        flex: 1 0 auto;
+        padding-right: 0px;
+        padding-bottom: 30px;
+        border-right: none;
+        border-bottom: 5px solid var(--bg-color);
+    }
+    
+    .social__body {
+        flex: 1 0 auto;
+        margin-top: 40px;
+        padding-left: 0px;
+        border-left: none;
+    }
+    
+    .other__languages {
+        margin-top: 0;
+        padding-bottom: 30px;
+        border: none;
+        border-bottom: 5px solid var(--bg-color);
+    }
+    
+    .other__courses {
+        flex: 1 0 30%;
+        padding-left: 0px;
+        border-left: none;
+    }
+
+    .languages {
+        margin-top: 30px;
+        flex-direction: column;
     }
 }
